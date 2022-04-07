@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Practice</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Patient Registration Form</h1>
+            <p>We nmust have an accurately completed form on file for every patient, please fill out and return the following form.</p>
+        </header>
+        <form action="/form-submission" method="post">
+            <fieldset>
+                <div class="row">
+                    <label for="patient-name">Patient's Name (Last, First, MI):
+                        <input type="text" id="patient-name" required>
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="home-phone">
+                        Patient's Home Phone Number:
+                        <input type="text" id="home-phone">
+                    </label>
+                    <label for="alt-phone">
+                        Alternate Phone Number (<input type="radio" value="cell" name="phone">Cell<input type="radio" name="phone" value="work">Work): <input type="text" name="alt-phone" id="">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="email">
+                    <input type="email" name="email" id="email">
+                </label>
+            </fieldset>
+            <fieldset>
+                <row>
+                    <label for="street">
+                        Address:
+                        <input type="text" name="street" id="street">
+                    </label>
+                    <label for="apt">
+                        Apt. #
+                        <input type="text" name="apt">
+                    </label>
+                </row>
+                <row>
+                    <label for="city">
+                        City:
+                        <input type="text" name="city" id="city">
+                    </label>
+                    <label for="state">
+                        State:
+                        <input type="text">
+                    </label>
+                    <label for="zip">
+                        Zip:
+                        <input type="text" name="text" id="text">
+                    </label>
+                </row>
+            </fieldset>
+            <fieldset>
+                <div class="row">
+                    <label for="bd">
+                        Date of Birth:
+                        <input type="text" name="bd" id="bd">
+                    </label>
+                    <label for="age">
+                        Age:
+                        <input type="text" name="age" id="age">
+                    </label>
+                    <label for="sex">
+                        Sex:
+                        <input type="radio" name="sex" id="male">M
+                        <input type="radio" name="sex" id="femail">F
+                    </label>
+                    <label for="social-security">
+                        Social Security Number:
+                        <input type="text" name="social-security" id="social-security">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="row">
+                    <label for="marital-status">
+                        Marital Status:
+                        <input type="radio" name="marital-status" id="married">Married
+                        <input type="radio" name="marital-status" id="single">Single
+                        <input type="radio" name="marital-status" id="divorced">Divorced
+                        <input type="radio" name="marital-status" id="widowed">Widowed
+                    </label>
+            </div>
+            </fieldset>
+            <fieldset>
+                <div class="row">
+                    <label for="employer">
+                        <input type="text" name="employer" id="employer">
+                    </label>
+                    <label for="employment-status">
+                        <input type="radio" name="employment-status" id="full-time" value="full-time">Full time
+                        <input type="radio" name="employment-status" id="part-time" value="part-time">Part time
+                        <input type="radio" name="employment-status" id="unemployed" value="unemployed">Unemployed
+                        <input type="radio" name="employment-status" id="retired" value="retired">Retired
+                        <input type="radio" name="employment-status" id="student" value="student">Student
+                        Other:
+                        <input type="text" name="other">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="row">
+                    <label for="emergency-contact">
+                        Emergency Contact:
+                        <input type="text" name="emergency-contact">
+                    </label>
+                    <label for="patient-relationship">
+                        Relationship to Patient:
+                        <input type="text" name="patient-relationship">
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="em-adderss">
+                        Address:
+                        <input type="text" name="em-contact">
+                    </label>
+                    <label for="em-phone">
+                        Phone number:
+                        <input type="text" name='em-phone'>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="column">
+                    <h2>Insurance Information</h2>
+                    <label for="insurance-primary">
+                        Primary Insurance:
+                        <input type="text" name="insurance-primary" id="insurance-primary">
+                    </label>
+                    <label for="holder-primary">
+                        Patient is Subscriber/Policy Holder:
+                        <input type="radio" name="holder-primary" id="primary-yes">Yes
+                        <input type="radio" name="holder-primary" id="primary-no">
+                    </label>
+                </div>
+                <div class="column">
+                    <label for="insurance-secondary">
+                        Secondary Insurance:
+                        <input type="text" name="insurance-secondary" id="insurance-secondary">
+                    </label>
+                    <label for="holder-secondary">
+                        Patient is Subscriber/Policy Holder:
+                        <input type="radio" name="holder-secondary" id="secondary-yes">Yes
+                        <input type="radio" name="holder-secondary" id="secondary-no">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Insured Information (If other than patient) - We will request to scan your ID and isnurance card</h2>
+                <div class="row">
+                    <label for="subcriber">
+                        Subscriber/Policy Holder:
+                        <input type="text" name="subscriber">
+                    </label>
+                    <label for="rel-to-patient">
+                        Relationship to Patient:
+                        <input type="text" name="rel-to-patient">
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="insured-address">
+                        Address:
+                        <input type="text" name="insured-address">
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="insured-social">
+                        Social Security Number:
+                        <input type="text" name="insured-social">
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="insured-bd">
+                        Date of Birth:
+                        <input type="text" name="insured-bd">
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="insured-employer">
+                        His/Her Employer:
+                        <input type="text" name="insured-employer">
+                    </label>
+                    <label for="insured-phone">
+                        Work Phone Number:
+                        <input type="text" name="insured-phone">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <h2>Release of Information</h2>
+                <p>I hereby give permission to the person(s) listed below to receive information about hte care fo the above named patient.</p>
+                <div class="row">
+                    <label for="name-s">
+                        Name(s):
+                        <input type="text" name="name-s" id="name-s">
+                    </label>
+                    <label for="rel-s">
+                        Name(s):
+                        <input type="text" name="rel-s" id="rel-s">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <p>Solomon Medical Group reserves the right to charge a fee for any scheduled visits that are:
+                </p>
+                <ol>
+                    <li>Cancelled with less than 24 hours notice</li>
+                    <li>Are missed without calling to cancel (no show)</li>
+                </ol>
+                <p>Cancellation Fee schedule: New Patient $50.00; Established Patient: $35.00</p>
+                <div class="row">
+                    <label for="sig">
+                        Patient/Parent or Guardian Signature:
+                        <input type="text" name="sig">
+                    </label>
+                    <label for="sig-date">
+                        Date:
+                        <input type="text" name="sig-date">
+                    </label>
+                </div>
+            </fieldset>
+            <button>Submit Form</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
