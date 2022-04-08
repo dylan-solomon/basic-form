@@ -49,3 +49,17 @@ h2 {
     gap: 10px;
 }
 
+label {
+    margin-top: 8px;
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+}
+button {
+    padding: 1.7em 1.5em;
+    margin: 1rem;
+    border-radius: .7rem;
+    border: none;
+}
